@@ -159,3 +159,89 @@ if""then
 else
 
 -->end
+#8.
+![](http://www.plantuml.com/plantuml/img/qz3IrDMrKr3oBqZDK-BAJ5DIAib8pUC2Ypddv1UdAd6bvXIdGWI2KXDJbBWW5510ARWalmYe04ehWDNu9fOaPq1CKe0P1THHa5zKWZ0AQ7HgOX7OAB04r3g868G62MbeQG80)
+##Code
+(*)--> "Open"
+
+if""then
+
+--> "Close"
+
+else
+
+--> "Read"
+
+"Read"-->"Store"
+
+"Store" --> "Match"
+
+if"" then
+
+-->"Report"
+
+else
+
+-->"Clear"
+
+"Report"--> "Clear"
+
+"Clear"--> (*)
+#9.
+![](http://www.plantuml.com/plantuml/img/NOwn3i8m34HtVuNbgQtKNq22ZHaO4EfWH4ej9MxKf0D_ZzK42PYiUtTdk-dQljyX-VafIb0dRcnYpu4LBzc6UR-wPCuSedWSvoNW_X549UM5an38Y4IO9wS05hLsN1E1yyaXRDsZnZNZNVZ5VztliaLlLvS6f9E4o5fMR5ZdWGwSsTjprJJST2rK_57bTb5l)
+##Code
+(*)--> "login"
+
+"login" --> "halaman Utama"
+
+"halaman Utama" --> "Tampil form Administrasi"
+
+if "" then
+
+-->"hapus"
+
+else 
+
+--> "Input biaya Administrasi"
+
+if "" then
+
+-->[Yes] "Simpan"
+
+else
+
+-->[no]"Batal"
+
+"Simpan"-->(*)
+
+"Batal"-->(*)
+
+"hapus"-->(*)
+#10.
+![](http://www.plantuml.com/plantuml/img/NOx12i8m38RlUOgGqpReGU_TGK7m80ns50-bYwnIwkYgps_gDg5UojyloPTKJOqggXQfPyysOUyI4nI_NATZP9COEsy2WRiZ4QQH0oZLNesrF2KURbeVzbe3-vbXiKP-Y4U4Qq2LQI5RXb0DkT8P5z8VExrYSFCeaYrbhgLd9m-iCmNRGePqURuPpxBfbxvNL4qD7m00)
+##Code
+(*) -r-> "Select Site"
+
+"Select Site"-r->"Create Plan"
+
+if "" then
+
+-->[accepted]==B2==
+
+else
+
+-r-> "reject"
+
+"reject" --> "Create Plan"
+
+==B2== -d-> "Paint"
+
+==B2== -d-> "Furnish"
+
+"Furnish"-d->===B1===
+
+"Paint"-d->===B1===
+
+===B1===-d->"Move In"
+
+"Move In" --> (*)
