@@ -139,3 +139,23 @@ else
 
 "Display Menu"-->(*)
 
+#7.
+![](http://www.plantuml.com/plantuml/img/TOun2e0m40HxNn5IgP0FM5Zv2x4GNJMGN2IU_pSf91gqEsQ7uSgw4agrGawEs3jZu1jDcijA5XzCA9_9AxWRUSpzX4FzEOHpFncvdt3qhPiDNkcS96jozWxgHKhUG4LO-nZNT6Bu-HRcG1H1ymK0)
+##Code
+(*) --> "controller:init()"
+
+"controller:init()" -r-> "controller:getData()"
+
+"controller:getData()"-->"controller:conpute()"
+
+"controller:conpute()"-->"modle:getData()"
+
+"modle:getData()"-->"modle:compute()"
+
+if""then
+
+-->[continue]"controller:getData()"
+
+else
+
+-->end
