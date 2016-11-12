@@ -1,7 +1,8 @@
 #ธีรศักดิ์ บัวไขย์ 57030175
 # OOAD-WEEK11
 State Diagram
-1.
+
+#1.
 ![](http://www.plantuml.com/plantuml/img/YzQALT1DqRLJSCqhIIqAoCpZWZ4Kh1JyynHIyqgAAe5CiAW2chnBle9ZSabcFeWTbfYJcP9OagfGWAn65sQoOsv-QLu95n8RRZxGN9ZvM5KXs-ASaPgShP08aR9HI4hCISnBJaNH0FPDU6P9HafHOdboOd465p87pRpG0h2ROUQWg0IwFLeh5W00)
 ##Code
 [*] -d-> EnterPin
@@ -22,7 +23,7 @@ Withdrawcash : Do Action : Update balance
 
 Withdrawcash -->[*]
 
-2.
+#2.
 ![](http://www.plantuml.com/plantuml/img/YzQALT3LjLC8JYqfBU02amfM2Ydv-fbvcIMPYJcPLQaAnQcvcNc9HL1PtIAWSiUonCoSnAISL2uu2wSsX0hT5A1MjzAS72uG0T6G1bI3eXmi1LOPhHMBhjavCIyvDISr1UOM534O0s9mKMfQQLwAGa5YPMvgNaanGXPcDW00)
 ##Code
 [*] --> Setup
@@ -47,7 +48,7 @@ Canceled : do/refund payments
 
 Canceled -d-> [*]
 
-3.
+#3.
 ![](http://www.plantuml.com/plantuml/img/TP0n2yCW48LtVyND1N7lqA6GeL38r2baa6Yen9xbOY3vzqcZKLle9FUzztodpQa5Jlm2TzSDMh5mm1aqUbh4PypiBSTHI2lfTR0z-a1xE3fda1Lpk2K0zkC30VufSO35JLdZDYqJ6mjDRTgLtA1nqvh0ePV6QjN6beh8KLhlE_3N7YsyhExDlFr72eUNr9El-vgKfgnKi_7YXZjT0G00)
 ##Code
 [*] -r-> Locked
