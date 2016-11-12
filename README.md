@@ -122,4 +122,20 @@ Delivering : entry/deliver Items
 
 Canceling : Do/remove Item
 
+#6.
+![](http://www.plantuml.com/plantuml/img/qz3IrDMrKr3op2jEBIfHS4uiIb7YGk4fWELTyqfIYnG2FFsK5BWyqvIK54eoKlEuG5BHddbbYJcPAI39M2Nd_BoqpEBan99Ki6Akr9pYL8YoC8GYbypYWfp4IWNVrBnIe6qeNA1Q3IrD0000)
+##Code
+(*)--> "Insert Card"
+
+"Insert Card" --> "Enter PIN" 
+
+If"" then
+
+--> [Invalid PIN]"Confiscate PIN"
+
+else
+
+--> [Valid PIN]"Display Menu"
+
+"Display Menu"-->(*)
 
