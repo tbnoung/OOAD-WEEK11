@@ -95,4 +95,31 @@ Broken --> Locked : fixed
 Broken : entry/OutOfOrder
 
 Broken : Exit/InOrder
+#5.
+![](http://www.plantuml.com/plantuml/img/VO-n3i8m34JtV8Ldf2Wx0mjXOE8344ELMDI29iYDglRlSL8Qmi9spldbpjVT3RJN1t0zkWU5kze4xC57C6K4IZXy7Sq2M1fVNN9zPXhzmO029UeIWgSdJSXBWmjzOO-SqKq8TvefcRCa0QD3WNphslnhpFFQfbhwJvbociNIu2Uj6CSkEF4oKrSa2KFYnVZr2NAXKTNLqiGm3d72ugat)
+ ##Code
+ [*] -d-> checking
+ 
+checking : do /check item
+
+checking -r-> Dispatching
+
+Dispatching : do / initiate dilivery
+
+checking --> Ordering
+
+Ordering : Exit/Item received
+
+Ordering : Do / order item
+
+Ordering --> Dispatching
+
+Dispatching -d-> Delivering
+
+Ordering -d-> Canceling
+
+Delivering : entry/deliver Items
+
+Canceling : Do/remove Item
+
 
